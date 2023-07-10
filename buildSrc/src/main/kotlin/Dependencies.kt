@@ -13,7 +13,8 @@ object Versions {
 }
 
 object Modules {
-
+    const val APP = ":app"
+    const val CORE_DESIGN_SYSTEM = ":core-designsystem"
 }
 
 object BuildPluginVersion {
@@ -35,12 +36,15 @@ object LifecycleLibs {
 }
 
 object Compose {
+    const val FOUNDATION = "androidx.compose.foundation:foundation:${Versions.COMPOSE}"
     const val ACTIVITY = "androidx.activity:activity-compose:${Versions.COMPOSE_ACTIVITY}"
     const val UI = "androidx.compose.ui:ui:${Versions.COMPOSE}"
     const val TOOLING_PREVIEW = "androidx.compose.ui:ui-tooling-preview:${Versions.COMPOSE}"
+    const val MATERIAL = "androidx.compose.material:material:${Versions.COMPOSE}"
     const val MATERIAL3 = "androidx.compose.material3:material3:${Versions.COMPOSE_MATERIAL3}"
     const val TOOLING = "androidx.compose.ui:ui-tooling:${Versions.COMPOSE}"
     const val TEST_MANIFEST = "androidx.compose.ui:ui-test-manifest:${Versions.COMPOSE}"
+    const val UI_UTIL="androidx.compose.ui:ui-util:${Versions.COMPOSE}"
 }
 
 object TestingLib {
