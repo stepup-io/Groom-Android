@@ -7,10 +7,18 @@ val LocalGroomColors = staticCompositionLocalOf {
     GdsColors()
 }
 
+val LocalGroomTypography = staticCompositionLocalOf {
+    GdsTypography()
+}
+
 object GroomTheme {
 
     val colors: GdsColors
         @Composable
         get() = LocalGroomColors.current
+
+    val typography: GdsTypography
+        @Composable
+        get() = LocalGroomTypography.current
 
 }
